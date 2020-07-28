@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - solution",
+            "request": "launch",
+            "mainClass": "test.solution",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-solution<test>",
+            "request": "launch",
+            "mainClass": "solution",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Attack<test>",
+            "request": "launch",
+            "mainClass": "test.Attack",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Parenthesis<test>",
+            "request": "launch",
+            "mainClass": "test.Parenthesis",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TopElement<test>",
+            "request": "launch",
+            "mainClass": "test.TopElement",
+            "projectName": "test"
+        }
+    ]
+}
