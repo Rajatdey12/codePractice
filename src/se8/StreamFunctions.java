@@ -33,6 +33,7 @@ public class StreamFunctions {
             return el.toLowerCase(Locale.ROOT);
         }).skip(3).count();
 
-        System.out.println(newData);
     }
+
+
 }
