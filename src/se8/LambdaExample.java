@@ -7,7 +7,7 @@ import java.util.Objects;
 @FunctionalInterface
 public interface LambdaExample {
 
-    public boolean getEmployees(List<Employee> empList);
+    boolean getEmployees(List<Employee> empList);
 }
 
 class LambdaExampleImpl {
@@ -22,6 +22,10 @@ class LambdaExampleImpl {
         List<Employee> emp = Arrays.asList(
                 new Employee(1, "HR", "TR"), new Employee(2, "HRR","TR"));
 
-        System.out.println("Is the Employee is valid :: " + validEmployee.getEmployees(emp));
+        if (validEmployee.getEmployees(emp)) {
+            emp.forEach(e -> System.out.println(e.getName() + ":::" + e.getLastname()));
+        } else {
+            emp.forEach(e -> System.out.println(e.getName() + ":::" + e.getLastname()));
+        }
     }
 }
