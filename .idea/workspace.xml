@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/se8/ClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/IntersectingNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/LoopInLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/RotateList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se8/LambdaExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/MathOnStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/MathOnStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/StreamFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/StreamFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/Telusko.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -45,9 +39,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Application.RotateList">
-    <configuration name="ComplexMult" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.ComplexMult" />
+  <component name="RunManager" selected="Application.LambdaExampleImpl">
+    <configuration name="LambdaExampleImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.LambdaExampleImpl" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.LengthOfLongestSubstring" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -65,19 +72,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathOnStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.MathOnStream" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaExampleImpl" />
+        <item itemvalue="Application.LengthOfLongestSubstring" />
         <item itemvalue="Application.RotateList" />
         <item itemvalue="Application.LoopInLinkedList" />
         <item itemvalue="Application.Parenthesis" />
-        <item itemvalue="Application.MathOnStream" />
-        <item itemvalue="Application.ComplexMult" />
       </list>
     </recent_temporary>
   </component>
