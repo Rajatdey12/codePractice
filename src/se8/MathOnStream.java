@@ -17,8 +17,9 @@ public class MathOnStream {
     List<Employee> emp = Arrays.asList(
             new Employee(1, "HR", "TR1"), new Employee(2, "HR","TR"));
 
-    MathOnStream.removeDuplicates(emp);
-    MathOnStream.sortEmployee(emp);
+//    MathOnStream.removeDuplicates(emp);
+//    MathOnStream.sortEmployee(emp);
+    MathOnStream.iterParallel();
   }
 
   public static void removeDuplicates(List<Employee> emp) {
@@ -26,6 +27,13 @@ public class MathOnStream {
     for(Employee e : remDupList) {
       System.out.println(e.getName());
     }
+  }
+
+  public static void iterParallel() {
+    List<Integer> ints = Arrays.asList(1,2,3,5,6,7);
+    List<Integer> updatedInts = ints.parallelStream().collect(Collectors.toList());
+    System.out.println(updatedInts);
+
   }
 
   public static void sortEmployee(List<Employee> emp) {

@@ -1,0 +1,58 @@
+Licence code : EH22FKZNW8G6S7GEZGSX
+
+clould computing models : https://www.javatpoint.com/cloud-service-models
+
+Scaling -
+1. Horizontal Scaling - Increasing no. of node, instances, VMs
+2. Vertical Scaling - Increasing more power to same or one instance or node. (RAM, processors, cores, threads)
+
+Evolution or need of services later on -
+EC2(instance) -> ECS(docker based) -> AWS Lambda(purely serverless, functions)
+
+Region & availability zones :
+Availability zones are data centers. Each region can have multiple availability zones.
+e.g; us-east-1, us-east-2 (private fibre is used to connect availability zones and regions)
+
+In EC2 we create AMI(Amazon machine image)
+
+Authentication - Authenticate a user or log in a user.
+Authorization - Authorize a user for specific resources.
+
+Configure credentials in AWS cli - "aws configure"
+
+Lab Environment for AWS : https://aws.qwiklabs.com/
+
+Explore AWS Labs :
+Download solutions and AWS CloudFormation templates for the labs from “Solutions for All Labs - Developing on AWS v3.3” (https://go.aws/2LNzhoF)
+
+Copy files from S3 from one region bucket to another bucket:
+
+Copy
+
+aws s3 cp s3:// DOC-EXAMPLE-BUCKET-SOURCE / \
+       s3:// DOC-EXAMPLE-BUCKET-TARGET / \
+      --recursive --source-region SOURCE-REGION-NAME --region DESTINATION-REGION-NAME
+Synchronize
+
+ aws s3 sync  s3:// DOC-EXAMPLE-BUCKET-SOURCE / \
+       s3:// DOC-EXAMPLE-BUCKET-TARGET / \
+     --source-region SOURCE-REGION-NAME --region DESTINATION-REGION-NAME
+	 
+AWS Lambda signature :
+Handler function takes event & context as arguement
+public String myHandler(Event event, Context context) {}
+
+Client App -> api gateway -> aws lambda -> logic (vice-versa)
+
+Messaging service in AWS:
+Amazon SNS - Amazon Simple notification service
+Amazon SQS - Amazon Simple Queue service
+
+1. service -> SNS -> left nav -> topics -> create topic -> create subscription
+
+Amazon Cognito for Authentication
+
+https://www.aws.training
+
+CERTIFICATE LINK :
+https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=4lQFpcTbx0WLXWhHRA_eiQ2

@@ -1,0 +1,382 @@
+GOLANG EXERCISE QUESTIONS :
+https://golangr.com/exercises/
+https://github.com/plutov/practice-go
+https://exercism.org/tracks/go/exercises
+
+https://participant.empower-retirement.com/participant/#/login
+
+
+LRU CACHE :
+----------------------------------------------------------------------------------------------------------------
+public class LRUCache {
+
+	// store keys of cache
+	private Deque<Integer> doublyQueue;
+
+	// store references of key in cache
+	private HashSet<Integer> hashSet;
+
+	// maximum capacity of cache
+	private final int CACHE_SIZE;
+
+	LRUCache(int capacity) {
+		doublyQueue = new LinkedList<>();
+		hashSet = new HashSet<>();
+		CACHE_SIZE = capacity;
+	}
+
+	/* Refer the page within the LRU cache */
+	public void refer(int page) {
+		if (!hashSet.contains(page)) {
+			if (doublyQueue.size() == CACHE_SIZE) {
+				int last = doublyQueue.removeLast();
+				hashSet.remove(last);
+			}
+		}
+		else {/* The found page may not be always the last element, even if it's an
+			intermediate element that needs to be removed and added to the start
+			of the Queue */
+			doublyQueue.remove(page);
+		}
+		doublyQueue.push(page);
+		hashSet.add(page);
+	}
+
+	// display contents of cache
+	public void display() {
+		Iterator<Integer> itr = doublyQueue.iterator();
+		while (itr.hasNext()) {
+			System.out.print(itr.next() + " ");
+		}
+	}
+
+	public static void main(String[] args) {
+		LRUCache cache = new LRUCache(4);
+		cache.refer(1);
+		cache.refer(2);
+		cache.refer(3);
+		cache.refer(1);
+		cache.refer(4);
+		cache.refer(5);
+		cache.refer(2);
+		cache.refer(2);
+		cache.refer(1);
+		cache.display();
+	}
+}
+
+
+INORDER, POSTOREDER, PREORDER TREE
+---------------------------------------------------------------------------------------------------------------------------
+// Java program for different tree traversals
+
+/* Class containing left and right child of current
+node and key value*/
+class Node {
+	int key;
+	Node left, right;
+
+	public Node(int item)
+	{
+		key = item;
+		left = right = null;
+	}
+}
+
+class BinaryTree {
+	// Root of Binary Tree
+	Node root;
+
+	BinaryTree() { root = null; }
+
+	/* Given a binary tree, print its nodes according to the
+	"bottom-up" postorder traversal. */
+	void printPostorder(Node node)
+	{
+		if (node == null)
+			return;
+
+		// first recur on left subtree
+		printPostorder(node.left);
+
+		// then recur on right subtree
+		printPostorder(node.right);
+
+		// now deal with the node
+		System.out.print(node.key + " ");
+	}
+
+	/* Given a binary tree, print its nodes in inorder*/
+	void printInorder(Node node)
+	{
+		if (node == null)
+			return;
+
+		/* first recur on left child */
+		printInorder(node.left);
+
+		/* then print the data of node */
+		System.out.print(node.key + " ");
+
+		/* now recur on right child */
+		printInorder(node.right);
+	}
+
+	/* Given a binary tree, print its nodes in preorder*/
+	void printPreorder(Node node)
+	{
+		if (node == null)
+			return;
+
+		/* first print data of node */
+		System.out.print(node.key + " ");
+
+		/* then recur on left sutree */
+		printPreorder(node.left);
+
+		/* now recur on right subtree */
+		printPreorder(node.right);
+	}
+
+	// Wrappers over above recursive functions
+	void printPostorder() { printPostorder(root); }
+	void printInorder() { printInorder(root); }
+	void printPreorder() { printPreorder(root); }
+
+	// Driver method
+	public static void main(String[] args)
+	{
+		BinaryTree tree = new BinaryTree();
+		tree.root = new Node(1);
+		tree.root.left = new Node(2);
+		tree.root.right = new Node(3);
+		tree.root.left.left = new Node(4);
+		tree.root.left.right = new Node(5);
+
+		System.out.println(
+			"Preorder traversal of binary tree is ");
+		tree.printPreorder();
+
+		System.out.println(
+			"\nInorder traversal of binary tree is ");
+		tree.printInorder();
+
+		System.out.println(
+			"\nPostorder traversal of binary tree is ");
+		tree.printPostorder();
+	}
+}
+
+INSERTION IN A BINARY TREE IN LEVEL ORDER
+---------------------------------------------------------------------------------------------------------------------
+public class GFG {
+
+	/* A binary tree node has key, pointer to
+	left child and a pointer to right child */
+	static class Node {
+		int key;
+		Node left, right;
+
+		// constructor
+		Node(int key)
+		{
+			this.key = key;
+			left = null;
+			right = null;
+		}
+	}
+	static Node root;
+	static Node temp = root;
+
+	/* Inorder traversal of a binary tree*/
+	static void inorder(Node temp)
+	{
+		if (temp == null)
+			return;
+
+		inorder(temp.left);
+		System.out.print(temp.key + " ");
+		inorder(temp.right);
+	}
+
+	/*function to insert element in binary tree */
+	static void insert(Node temp, int key)
+	{
+
+		if (temp == null) {
+			root = new Node(key);
+			return;
+		}
+		Queue<Node> q = new LinkedList<Node>();
+		q.add(temp);
+
+		// Do level order traversal until we find
+		// an empty place.
+		while (!q.isEmpty()) {
+			temp = q.peek();
+			q.remove();
+
+			if (temp.left == null) {
+				temp.left = new Node(key);
+				break;
+			}
+			else
+				q.add(temp.left);
+
+			if (temp.right == null) {
+				temp.right = new Node(key);
+				break;
+			}
+			else
+				q.add(temp.right);
+		}
+	}
+
+	// Driver code
+	public static void main(String args[])
+	{
+		root = new Node(10);
+		root.left = new Node(11);
+		root.left.left = new Node(7);
+		root.right = new Node(9);
+		root.right.left = new Node(15);
+		root.right.right = new Node(8);
+
+		System.out.print(
+			"Inorder traversal before insertion:");
+		inorder(root);
+
+		int key = 12;
+		insert(root, key);
+
+		System.out.print(
+			"\nInorder traversal after insertion:");
+		inorder(root);
+	}
+}
+
+PRINT LEFT OR RIGHT LEVEL OF TREE NODE :
+--------------------------------------------------------------------------------------------------------------
+class Node {
+    int data;
+    Node left, right;
+ 
+    public Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+ 
+/* Class to print the left view */
+class BinaryTree {
+    Node root;
+    static int max_level = 0;
+ 
+    // recursive function to print left view
+    void leftViewUtil(Node node, int level)
+    {
+        // Base Case
+        if (node == null)
+            return;
+ 
+        // If this is the first node of its level
+        if (max_level < level) {
+            System.out.print(" " + node.data);
+            max_level = level;
+        }
+ 
+        // Recur for left and right subtrees
+        leftViewUtil(node.left, level + 1);
+        leftViewUtil(node.right, level + 1);
+    }
+ 
+    // A wrapper over leftViewUtil()
+    void leftView()
+    {
+        leftViewUtil(root, 1);
+    }
+
+MERGE SORT ALGORITHM
+------------------------------------------------------------------------------------------------------------------
+class MergeSort
+{
+    // Merges two subarrays of arr[].
+    // First subarray is arr[l..m]
+    // Second subarray is arr[m+1..r]
+    void merge(int arr[], int l, int m, int r)
+    {
+        // Find sizes of two subarrays to be merged
+        int n1 = m - l + 1;
+        int n2 = r - m;
+ 
+        /* Create temp arrays */
+        int L[] = new int[n1];
+        int R[] = new int[n2];
+ 
+        /*Copy data to temp arrays*/
+        for (int i = 0; i < n1; ++i)
+            L[i] = arr[l + i];
+        for (int j = 0; j < n2; ++j)
+            R[j] = arr[m + 1 + j];
+ 
+        /* Merge the temp arrays */
+ 
+        // Initial indexes of first and second subarrays
+        int i = 0, j = 0;
+ 
+        // Initial index of merged subarray array
+        int k = l;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+ 
+        /* Copy remaining elements of L[] if any */
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+ 
+        /* Copy remaining elements of R[] if any */
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+ 
+    // Main function that sorts arr[l..r] using
+    // merge()
+    void sort(int arr[], int l, int r)
+    {
+        if (l < r) {
+            // Find the middle point
+            int m =l+ (r-l)/2;
+ 
+            // Sort first and second halves
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+ 
+            // Merge the sorted halves
+            merge(arr, l, m, r);
+        }
+    }
+ 
+    /* A utility function to print array of size n */
+    static void printArray(int arr[])
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; ++i)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+ 

@@ -18,7 +18,19 @@ public class PossibleSubsets {
         }
     }
 
+    public static void allPossibleSubsets(String str) {
+
+        int n = str.length();
+        for (int i = 0; i < n; i++) {
+            for (int j = i+1; j <= n; j++) {
+                System.out.println(str.substring(i, j));
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        possibleSubsets("abc");
+        String str = "hel";
+//        possibleSubsets(str);
+        allPossibleSubsets(str);
     }
 }
