@@ -22,7 +22,8 @@ class AnnotationImpl {
     @CustomAnnotation(name = "NAME", type = String.class, isMandatory = true)
     private String name;
 
-    private String adress;
+    @CustomAnnotation(type = String.class)
+    private String address;
 
     private int age;
 

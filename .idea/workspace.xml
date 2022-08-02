@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/se8/CustomAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/SwitchCaseEg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/KthSmallestElementInSortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/TwoSumEasy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/se8/ClassLoaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/se8/ClassLoaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/se8/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/se8/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/se8/MathOnStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/se8/MathOnStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/test/PossibleSubsets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/test/PossibleSubsets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/test/test/PrimeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/test/PrimeSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/ClassLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/ClassLoaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/MathOnStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/MathOnStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PossibleSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PossibleSubsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se8/CustomAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/CustomAnnotation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,13 +41,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.SwitchCaseEg">
+  <component name="RunManager" selected="Application.KthSmallestElementInSortedMatrix">
     <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se8.ClassLoaderTest" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="se8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KthSmallestElementInSortedMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.KthSmallestElementInSortedMatrix" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.practice.twentytwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,19 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBoolean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.TestBoolean" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestDateFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se8.TestDateFormat" />
       <module name="test" />
@@ -116,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KthSmallestElementInSortedMatrix" />
         <item itemvalue="Application.SwitchCaseEg" />
         <item itemvalue="Application.ClassLoaderTest" />
         <item itemvalue="Application.Rahul" />
         <item itemvalue="Application.TestDateFormat" />
-        <item itemvalue="Application.TestBoolean" />
       </list>
     </recent_temporary>
   </component>
