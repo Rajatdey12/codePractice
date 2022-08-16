@@ -1,7 +1,6 @@
 package test.practice.twentytwo;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class KthSmallestElementInSortedMatrix {
 
