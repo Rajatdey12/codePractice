@@ -1,0 +1,148 @@
+kubernetes yaml file/pod file or pod definition - manifest file
+
+https://aws.amazon.com/ec2/instance-types/
+
+taint cmd to tell kubs not to schedule anything on that pod
+
+Daemon set to call kubs pod
+
+aws configure --profile <name>
+
+export AWS_DEFAULT_PROFILE=<NAME>
+
+ECR - elastic container repository to push images
+
+POD CREATION :
+
+-crete a namespace
+kubect create namespace project1
+
+
+-create a pod by linking that to the ns
+
+
+kubectl run nginx --image=nginx --port=80 -n project1 - run th pod - pod creation
+kubectl get pods - gets the list of pods in DEFAULT ns 
+| kubectl get pods -n ns - gets pods in defined namespace
+kubectl expose pod nginx --type=LoadBalancer --name=nginx-service -n project1 - expose as a service
+
+from a manifest file - kubectl apply -f apps/manifest.yaml -n project1
+
+manifest files are ideal so that we can do version control on them.
+
+kube config file - ./config
+
+kubectl api-resources - all the kubernetes resources in kubs
+
+kubectl get namespaces
+
+kubectl get pods -n project1 -o wide - describes on which IP or ec2 node it is running
+
+FARGATE PROFILE :
+eksctl  create fargateprofile
+eksctl create cluster
+
+HELM - package manager for kubernetes
+weave/flux - gitOps tool - reads the changes from git/version control, checks desired state matches the current state.
+
+LAB 1: - BUILDING AN AMAZN EKS ENVIRONMENT
+--------------------------------------------
+
+download kubectl utility -
+sudo curl --location -o /usr/local/bin/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/kubectl
+
+make kubectl an executable file - 
+sudo chmod +x /usr/local/bin/kubectl
+
+check kube client version - 
+kubectl version --short --client
+
+EKS utility extraction command -
+curl --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+move eksctl to usr/local/bin -
+sudo mv -v /tmp/eksctl /usr/local/bin
+
+check eksctl version -
+eksctl version
+
+ENTER the following cmd to save the current region to a shell var and print on the screen.
+export AWS_REGION=$(curl --silent http://169.254.169.254/latest/meta-data/placement/region) && echo $AWS_REGION
+
+ENTER THE FOLLOWING CMD TO DEPLOY AN AMZ EKS CLUSTER WITH A MANAGED NODE GROUP OF 3 NODES -
+eksctl create cluster \
+--name dev-cluster \
+--nodegroup-name dev-nodes \
+--node-type t3.small \
+--nodes 3 \
+--nodes-min 1 \
+--nodes-max 4 \
+--managed \
+--version 1.21 \
+--region ${AWS_REGION}
+
+NOTE : IT CAN TAKE UPTO 15-20 MINS TO CREATE AND DEPLOY EKS CLUSTER
+
+get the list of node - 
+kubectl get nodes
+
+SAMPLE APPLICATION FILES TO DEPLOY IN EKS FOR DEMO TRAINING:
+
+aws s3 cp s3://aws-tc-largeobjects/ILT-TF-200-COREKS-10-EN/lab-1/ecsdemo-crystal/ ~/ecsdemo-crystal/ --recursive
+aws s3 cp s3://aws-tc-largeobjects/ILT-TF-200-COREKS-10-EN/lab-1/ecsdemo-frontend/ ~/ecsdemo-frontend/ --recursive
+aws s3 cp s3://aws-tc-largeobjects/ILT-TF-200-COREKS-10-EN/lab-1/ecsdemo-nodejs/ ~/ecsdemo-nodejs/ --recursive
+
+navigate to node-js dir - 
+cd ~/ecsdemo-nodejs
+
+create kubs deployment using kubectl cmd and kubs deployment file/manifest file -
+kubectl apply -f kubernetes/deployment.yaml
+
+crate a kubs service using the service manifest file -
+kubectl apply -f kubernetes/service.yaml
+
+watch and verify the deployment of the app -
+kubectl get deployment ecsdemo-nodejs
+
+get all/list the deployment services - 
+kubectl get deployments
+
+display the details of the ELB - elastic load balancer -
+kubectl get service ecsdemo-frontend -o wide
+
+
+GET NAMESPACES IN KUBECTL -
+kubectl get ns
+
+get the pods in default namespace -
+kubectl get pods -n default
+
+save the name of the first pod in a env var -
+export MY_POD_NAME=$(kubectl get pods -n default -o jsonpath='{.items[0].metadata.name}')
+
+details of pod -
+kubectl -n default describe pod $MY_POD_NAME
+
+command to connect to a bash shell inside a pod -
+kubectl exec -it ${MY_POD_NAME} -n default -- /bin/bash
+
+ls / - files & dirs inside the pod
+
+cat /proc/mounts - display the info about the proc/mounts coming directly from the terminal.
+
+
+scale out the app deployment -
+
+kubectl scale deployment ecsdemo-nodejs --replicas=3
+
+kubectl scale deployment ecsdemo-crystal --replicas=3
+
+list all the kubs deployment in the default namespace -
+kubectl get deployments
+
+replicas are the no. of containers a pod is going to run
+
+
+
+
+

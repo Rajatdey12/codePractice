@@ -1,0 +1,204 @@
+TO CREATE VPC LINKS :
+
+internet gateways -> attach it to the vpc
+create NAT gateway
+
+VPC -> Route Tables
+
+ENI - elastic network interface
+how the pod nodes communicate 
+
+Type - NodePort connects to a specific port
+
+A VPC will have more Subnets.
+
+AWS APP MESH - its for service mesh in microservices and managing it.
+
+AWS EKS used CNI to enable pods in different nodes to communicate.
+
+pode -> pod comm in same node - veth0/veth
+
+EXPLORE AWS EKS Communications -
+
+To check if mesh & other manifests are present in kubs -
+kubectl -n no-mesh get pods,deploy,service
+
+execute inside a pod for mesh -
+kubectl exec -n no-mesh -it ${DJ_POD_NAME} -- /bin/bash
+
+curl request to call the cluster - 
+curl -s rock-v1.no-mesh.svc.cluster.local:9080 | json_pp
+
+installing HELM commands -
+helm version --short
+
+add EKS repository to helm -
+helm repo add eks https://aws.github.io/eks-charts - eks has been added to the repository
+
+helm repo list
+
+Create a OIDC provider nd service mesh -
+
+Set aws region -
+export AWS_REGION=$(curl --silent http://169.254.169.254/latest/meta-data/placement/region) && echo $AWS_REGION
+
+Create an OIDC Provider for the cluster -
+eksctl utils associate-iam-oidc-provider --cluster dev-cluster --approve --region ${AWS_REGION}
+
+Create an IAM role and attach the IAM policy -
+eksctl create iamserviceaccount --cluster dev-cluster --namespace appmesh-system --name appmesh-controller --attach-policy-arn arn:aws:iam::aws:policy/AWSCloudMapFullAccess,arn:aws:iam::aws:policy/AWSAppMeshFullAccess --override-existing-serviceaccounts --approve --region ${AWS_REGION}
+
+Deploy app mesh -
+helm upgrade -i appmesh-controller eks/appmesh-controller --namespace appmesh-system --set region=${AWS_REGION} --set serviceAccount.create=false --set serviceAccount.name=appmesh-controller
+
+View the app mesh controller - 
+kubectl -n appmesh-system get deploy,pods,service
+
+Controller is up & running begin creating the mesh -
+cat ~/djapp/2_app_mesh/namespace.yaml
+
+mesh mainfest file -
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: Mesh
+metadata:
+  name: dj-app
+spec:
+  namespaceSelector:
+    matchLabels:
+      mesh: dj-app
+	  
+Create virtual nodes -
+cat /home/ssm-user/djapp/2_app_mesh/virtual-nodes.yaml
+
+virtual noe manifest -
+---
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualNode
+metadata:
+  name: country-v1
+  namespace: meshed
+spec:
+  podSelector:
+    matchLabels:
+      app: country
+      version: v1
+  listeners:
+    - portMapping:
+        port: 9080
+        protocol: http
+  serviceDiscovery:
+    dns:
+      hostname: country-v1.meshed.svc.cluster.local
+---
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualNode
+metadata:
+  name: rock-v1
+  namespace: meshed
+spec:
+  podSelector:
+    matchLabels:
+      app: rock
+      version: v1
+  listeners:
+    - portMapping:
+        port: 9080
+        protocol: http
+  serviceDiscovery:
+    dns:
+      hostname: rock-v1.meshed.svc.cluster.local
+	  
+view the virtual nodes -
+kubectl -n meshed get virtualnodes
+
+Create virtual routers -
+cat /home/ssm-user/djapp/2_app_mesh/virtual-routers.yaml
+
+---
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualRouter
+metadata:
+  name: rock-router
+  namespace: meshed
+spec:
+  listeners:
+    - portMapping:
+        port: 9080
+        protocol: http
+  routes:
+    - name: rock-route
+      httpRoute:
+        match:
+          prefix: /
+        action:
+          weightedTargets:
+            - virtualNodeRef:
+                name: rock-v1
+              weight: 100
+---
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualRouter
+metadata:
+  name: country-router
+  namespace: meshed
+spec:
+  listeners:
+    - portMapping:
+        port: 9080
+        protocol: http
+  routes:
+    - name: country-route
+      httpRoute:
+        match:
+          prefix: /
+        action:
+          weightedTargets:
+            - virtualNodeRef:
+                name: country-v1
+              weight: 100
+			 
+			 
+Create virtual router -
+kubectl apply -f /home/ssm-user/djapp/2_app_mesh/virtual-routers.yaml
+
+Create virtual services -
+kubectl apply -f /home/ssm-user/djapp/2_app_mesh/virtual-services.yaml
+
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualService
+metadata:
+  name: country
+  namespace: meshed
+spec:
+  awsName: country.meshed.svc.cluster.local
+  provider:
+    virtualRouter:
+      virtualRouterRef:
+        name: country-router
+---
+apiVersion: appmesh.k8s.aws/v1beta2
+kind: VirtualService
+metadata:
+  name: rock
+  namespace: meshed
+spec:
+  awsName: rock.meshed.svc.cluster.local
+  provider:
+    virtualRouter:
+	
+	
+View the app mesh controllers -
+kubectl -n appmesh-system get deploy,pods,service
+
+Examine the objects within the meshed namespace -
+kubectl get all -n meshed
+
+get pods -
+kubectl get pods -n meshed
+
+OIDC - Non AWS service wants to connect to AWS service. An outer entity permission to AWS entity. (open ID connect)
+
+
+
+
+

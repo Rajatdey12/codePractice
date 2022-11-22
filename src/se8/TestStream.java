@@ -1,8 +1,10 @@
-package com.rajat.test.main;
+package se8;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -51,6 +53,23 @@ public class TestStream {
 
     }
 
+    public static Map<String, Integer> getStudentNameAndScoreBasedOnMarksAndSortOnNames(
+            final Stream<Student> students,
+            final int passingScore) {
+
+        final Map<String, Integer> stMap = new TreeMap<>();
+
+        final List<Student> student = students.filter(s -> s.getMarks() >= passingScore)
+        .sorted((s1, s2) -> s1.getMarks() - s2.getMarks())
+        .collect(Collectors.toList());
+
+        for (final Student st : student) {
+            stMap.put(st.getName(), st.getMarks());
+        }
+        System.out.println(stMap);
+        return stMap;
+    }
+
 
     public static List<String> getStudentNameBasedOnMarksAndSortOnMarks(final Stream<Student> students,
             final int passingScore) {
@@ -81,6 +100,7 @@ public class TestStream {
         student.add(new Student("Aamir", 90));
         getStudentNameBasedOnMarksAndSortOnNames(student.stream(), 65);
         getStudentNameBasedOnMarksAndSortOnMarks(student.stream(), 65);
+        getStudentNameAndScoreBasedOnMarksAndSortOnNames(student.stream(), 65);
     }
 
 }
