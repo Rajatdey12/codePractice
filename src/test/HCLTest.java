@@ -29,6 +29,10 @@ public class HCLTest {
         }
     }
 
+
+    /*
+        No. of permutation of arrangement of the characters in the given string.
+     */
     public static void arrangeCombinations(String str, String res) {
 
         if (str.length() == 0) {
@@ -89,9 +93,9 @@ public class HCLTest {
 
     public static void main(String[] args) {
 //        noOfOccur("abc");
-//        arrangeCombinations("abc", "");
-//        missingElem(new int[]{2,1,4,5,6});
-//        duplicateCharacter("Rajat");
+        arrangeCombinations("abc", "");
+        missingElem(new int[]{2,1,4,5,6});
+        duplicateCharacter("Rajat");
         printNonRepeatNum(new int[]{1,2,2,3,3,1,4,3});
     }
 }

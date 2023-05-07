@@ -30,6 +30,20 @@ public class LoopInLinkedList {
         return false;
     }
 
+    static boolean detectLoopTwoPtr(Node n) {
+        Node fast = n;
+        Node slow = n;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public static void main(String[] args)
     {
 
@@ -48,5 +62,7 @@ public class LoopInLinkedList {
             System.out.print("Loop found");
         else
             System.out.print("No Loop");
+
+        System.out.println(detectLoopTwoPtr(head));
     }
 }

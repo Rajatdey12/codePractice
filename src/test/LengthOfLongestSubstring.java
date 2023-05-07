@@ -1,37 +1,41 @@
 package test;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LengthOfLongestSubstring {
 
     public static void main(String[] args) {
 
-       /* Input: s = "abcabcbb"
+        String[] inpArr = new String[] {"abcabcdbb", "TMMZUXT"};
+
+       /* Input: s = "abcabcbb", "TMMZUXT"
         Output: 3
         Explanation: The answer is "abc", with the length of 3.*/
-        longestSubsWithoutRepeatingCharacters("abcabcbb");
+        longestSubStrWithoutRepeatChars(inpArr[1]);
     }
 
-    public static int longestSubsWithoutRepeatingCharacters(String s) {
-        int n = s.length();
-        // Result
-        int res = 0;
-        for(int i = 0; i < n; i++)
-            for(int j = i; j < n; j++)
-                if (areDistinct(s, i, j))
-                    res = Math.max(res, j - i + 1);
-        System.out.println(res);
-        return res;
-    }
+    // HASHSET METHOD OR SLIDING WINDOW
+    public static int longestSubStrWithoutRepeatChars(String s) {
 
-    public static Boolean areDistinct(String str,
-                                      int i, int j) {
-        // Note : Default values in visited are false
-        boolean[] visited = new boolean[26];
-        for(int k = i; k <= j; k++) {
-            if (visited[str.charAt(k) - 'a'] == true)
-                return false;
+            Set<Character> set = new HashSet<>();
+            int maxLength=0;
+            int left=0;
+            for(int right=0;right<s.length();right++){
 
-            visited[str.charAt(k) - 'a'] = true;
-        }
-        return true;
+                if(!set.contains(s.charAt(right))){
+                    set.add(s.charAt(right));
+                    maxLength=Math.max(maxLength,right-left+1);
+
+                }else{
+                    while(s.charAt(left)!=s.charAt(right)){
+                        set.remove(s.charAt(left));
+                        left++;
+                    }
+                    left++;
+                }
+            }
+            System.out.println(maxLength);
+            return maxLength;
     }
 }

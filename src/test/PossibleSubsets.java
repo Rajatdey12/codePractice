@@ -21,6 +21,7 @@ public class PossibleSubsets {
     public static void allPossibleSubsets(String str) {
 
         int n = str.length();
+        System.out.println("new series....");
         for (int i = 0; i < n; i++) {
             for (int j = i+1; j <= n; j++) {
                 System.out.println(str.substring(i, j));
@@ -30,7 +31,7 @@ public class PossibleSubsets {
 
     public static void main(String[] args) {
         String str = "hel";
-//        possibleSubsets(str);
+        possibleSubsets(str);
         allPossibleSubsets(str);
     }
 }

@@ -10,6 +10,22 @@ public class TestDateFormat {
     static String[] vals = {"A", "B"};
 
 
+    public static void test1(String s) {
+        System.out.println(s);
+    }
+
+    public static void testStr() {
+        String a = new String("Jane");
+        String b = new String("Doe");
+        String c = new String("kane");
+        System.out.println(a = a = c);
+    }
+
+    public static void test1(StringBuffer s) {
+        System.out.println(s);
+    }
+
+
     public static boolean checkDateFormat(String date) {
         DateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy");
         sdf.setLenient(false);
@@ -35,6 +51,9 @@ public class TestDateFormat {
     public static void main(String[] args) {
 //        System.out.println(checkDateFormat("14-Sep-202$"));
 //        test();
-        testNullable("opt");
+//        testNullable("opt");
+//        test1(null);
+        testStr();
     }
+
 }

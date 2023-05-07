@@ -2,6 +2,7 @@ package se8;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
 
@@ -11,6 +12,9 @@ public class StreamFunctions {
 
         //STREAM OF COLLECTION
         Collection<String> data = Arrays.asList("a","1","c","2");
+
+        List<Integer> intList = Arrays.asList(1,2,3,5,6);
+
         System.out.println(data == null || data.isEmpty() ? Stream.empty() : data);
 
         //STREAM OF ARRAY
@@ -27,12 +31,20 @@ public class StreamFunctions {
         Stream<String> streamGenerated =
                 Stream.generate(() -> "el1").limit(10);
         System.out.println(streamGenerated.count());
+        streamGenerated.forEach(e -> {
+            System.out.println(e);
+        });
 
         //ORDER OF EXECUTION OF STREAM
         Long newData = data.stream().map(el -> {
             return el.toLowerCase(Locale.ROOT);
         }).skip(3).count();
 
+
+        intList.stream().map(e -> {
+            System.out.println(e);
+            return e;
+        });
     }
 
 

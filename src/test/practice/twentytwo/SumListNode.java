@@ -19,24 +19,25 @@ public class SumListNode {
         }
     }
 
-    int carry = 0;
 
-    public void addTwoNumbers(ListNode l1, ListNode l2) {
+    public void addTwoNumbers(ListNode l1, ListNode l2, int carry) {
 
         if (l1 == null || l2 == null) {
             return;
         }
-        // recursion..
-        addTwoNumbers(l1.next, l2.next);
 
         int sum = l1.val + l2.val + carry;
         carry = sum / 10;
         sum = sum % 10;
-
         System.out.println(sum);
+        // recursion..
+        addTwoNumbers(l1.next, l2.next, carry);
     }
 
+
     public ListNode addTwoNums(ListNode l1, ListNode l2) {
+
+        int carry = 0;
 
         if (l1 == null || l2 == null) {
             return null;
@@ -98,8 +99,8 @@ public class SumListNode {
         l2.next.next = new ListNode();
         l2.next.next.val = 4;
 
-//        sln.addTwoNumbers(l1, l2);
-        sln.addTwoNums(l1, l2);
-        sln.addTwoNumbersWithoutRecurse(l1, l2);
+        sln.addTwoNumbers(l1, l2, 0);
+//        sln.addTwoNums(l1, l2);
+//        sln.addTwoNumbersWithoutRecurse(l1, l2);
     }
 }
