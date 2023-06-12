@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/RemoveDuplicatesFromSortedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se8/LambdaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/LambdaExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/StreamFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/StreamFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se8/TestDateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/TestDateFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/HCLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HCLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LoopInLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LoopInLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PossibleSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PossibleSubsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/KthSmallestElementInSortedMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/KthSmallestElementInSortedMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/SumListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/SumListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/TwoSumEasy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/TwoSumEasy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,22 +51,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../UpGrad/UC-FSD-2198" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.LRUCacheTwo">
-    <configuration name="CountApples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.CountApples" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.practice.twentytwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.LRUCache" />
+  <component name="RunManager" selected="Application.VolksWagenTest">
+    <configuration name="EPAMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.EPAMTest" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +65,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCacheOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.LRUCacheOne" />
+    <configuration name="HCLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.HCLTest" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -97,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCacheTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.LRUCacheTwo" />
+    <configuration name="LambdaExampleImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.LambdaExampleImpl" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="se8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,8 +91,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeIntrvals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.MergeIntrvals" />
+    <configuration name="SingletonObj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.SingletonObj" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolksWagenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.VolksWagenTest" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LRUCacheTwo" />
-        <item itemvalue="Application.LRUCacheOne" />
-        <item itemvalue="Application.LRUCache" />
-        <item itemvalue="Application.CountApples" />
-        <item itemvalue="Application.MergeIntrvals" />
+        <item itemvalue="Application.VolksWagenTest" />
+        <item itemvalue="Application.SingletonObj" />
+        <item itemvalue="Application.EPAMTest" />
+        <item itemvalue="Application.LambdaExampleImpl" />
+        <item itemvalue="Application.HCLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,11 +168,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/LRUCacheOne.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/LRUCacheTwo.java</url>
           <line>27</line>

@@ -58,7 +58,7 @@ public class HCLTest {
         for (int i =0; i < n; i++) {
             missing -= arr[i];
         }
-        System.out.println(missing);
+        System.out.println("missing " + missing);
     }
 
     public static void duplicateCharacter(String str) {

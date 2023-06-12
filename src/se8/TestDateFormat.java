@@ -10,7 +10,11 @@ public class TestDateFormat {
     static String[] vals = {"A", "B"};
 
 
-    public static void test1(String s) {
+    public void test1(String s) {
+        System.out.println(s);
+    }
+
+    public void test1(StringBuffer s) {
         System.out.println(s);
     }
 
@@ -19,10 +23,6 @@ public class TestDateFormat {
         String b = new String("Doe");
         String c = new String("kane");
         System.out.println(a = a = c);
-    }
-
-    public static void test1(StringBuffer s) {
-        System.out.println(s);
     }
 
 

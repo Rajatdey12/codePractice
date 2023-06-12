@@ -9,20 +9,9 @@ public interface LambdaExample {
 
     boolean getEmployees(List<Employee> empList);
 
-    default void test1() {
-        System.out.println("def 1 printed");
-    }
-
-    default void test2() {
-        System.out.println("def 2 printed");
-    }
-
-    default void test3() {
-        System.out.println("def 2 printed");
-    }
 }
 
-class LambdaExampleImpl implements LambdaExample {
+class LambdaExampleImpl {
 
     public static final LambdaExample validEmployee = (empList) -> Objects.nonNull(empList)
             && empList.stream().anyMatch(emp -> !emp.getName().equals(emp.getLastname()))
@@ -42,11 +31,6 @@ class LambdaExampleImpl implements LambdaExample {
         }
 
         
-    }
-
-    @Override
-    public boolean getEmployees(List<Employee> empList) {
-        return false;
     }
 
 }
