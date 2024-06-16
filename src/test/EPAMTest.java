@@ -64,7 +64,7 @@ public class EPAMTest {
      * @return the count of valid pairs
      */
     public static boolean pairWith(int[] A) {
-        // Two pinter solution.
+        // Two pointer solution.
 
         return false;
     }

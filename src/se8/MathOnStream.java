@@ -17,9 +17,13 @@ public class MathOnStream {
     List<Employee> emp = Arrays.asList(
             new Employee(1, "HR", "TR1"), new Employee(2, "HR","TR"));
 
+    List<Employee> emp1 = Arrays.asList(
+            new Employee(1, "HR", "KR"), new Employee(2, "HR","TR"));
+
 //    MathOnStream.removeDuplicates(emp);
 //    MathOnStream.sortEmployee(emp);
-    MathOnStream.iterParallel();
+//    MathOnStream.iterParallel();
+    sortEmplGroupingName(emp1);
   }
 
   public static void removeDuplicates(List<Employee> emp) {
@@ -39,6 +43,13 @@ public class MathOnStream {
   public static void sortEmployee(List<Employee> emp) {
     emp.sort(Comparator.comparing(Employee::getName).thenComparing(Employee::getLastname));
     emp.stream().forEach(e -> System.out.println(e.getName() + "::" + e.getLastname()));
+  }
+
+  // sort employees based on lastName and return map by grouping by Name -
+  public static void sortEmplGroupingName(List<Employee> empl) {
+    Map<String, List<Employee>> emplList = empl.stream().sorted(Comparator.comparing(Employee::getLastname).reversed())
+            .collect(Collectors.groupingBy(Employee::getName));
+    System.out.println(emplList);
   }
 
   public static void firstLastOfArrayList(List<Integer> intArr) {
@@ -96,5 +107,14 @@ class Employee {
   @Override
   public int hashCode() {
     return Objects.hash(id, name, lastname);
+  }
+
+  @Override
+  public String toString() {
+    return "Employee{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", lastname='" + lastname + '\'' +
+            '}';
   }
 }

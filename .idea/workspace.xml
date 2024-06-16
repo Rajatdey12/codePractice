@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/RemoveDuplicatesFromSortedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se8/Test070523.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/LambdaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/LambdaExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/TestDateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/TestDateFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/HCLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HCLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se8/MathOnStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/MathOnStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/EPAMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/EPAMTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,25 +41,43 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="1ZDQF4I44m9Kg7lUotuvkOtIS86" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UpGrad/UC-FSD-2198" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RunManager" selected="Application.VolksWagenTest">
-    <configuration name="EPAMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.EPAMTest" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Abstract_Interface_eg.executor": "Run",
+    "Application.ClassLoaderTest.executor": "Run",
+    "Application.CountApples.executor": "Debug",
+    "Application.GroupAnagrams.executor": "Debug",
+    "Application.Leet121.executor": "Run",
+    "Application.Leet122.executor": "Run",
+    "Application.Leet200.executor": "Run",
+    "Application.Leet2615.executor": "Run",
+    "Application.Leet442.executor": "Debug",
+    "Application.MathOnStream.executor": "Run",
+    "Application.Test070523.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rajat/OneDrive/Documents/Projects/codePractice",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Leet200">
+    <configuration name="Leet122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet122" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="test.leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HCLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.HCLTest" />
+    <configuration name="Leet200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet200" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="test.leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,8 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaExampleImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.LambdaExampleImpl" />
+    <configuration name="Leet2615" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet2615" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathOnStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.MathOnStream" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -91,25 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonObj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.SingletonObj" />
+    <configuration name="Test070523" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.Test070523" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="se8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VolksWagenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.VolksWagenTest" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.practice.twentytwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,13 +139,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VolksWagenTest" />
-        <item itemvalue="Application.SingletonObj" />
-        <item itemvalue="Application.EPAMTest" />
-        <item itemvalue="Application.LambdaExampleImpl" />
-        <item itemvalue="Application.HCLTest" />
+        <item itemvalue="Application.Leet200" />
+        <item itemvalue="Application.Leet2615" />
+        <item itemvalue="Application.MathOnStream" />
+        <item itemvalue="Application.Leet122" />
+        <item itemvalue="Application.Test070523" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -159,7 +186,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated practice codes" />
@@ -172,6 +198,26 @@
           <url>file://$PROJECT_DIR$/src/test/LRUCacheTwo.java</url>
           <line>27</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/practice/twentytwo/GroupAnagrams.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/se8/Test070523.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/practice/twentytwo/CountApples.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/leetCode/Leet200.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
