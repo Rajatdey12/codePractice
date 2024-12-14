@@ -2,6 +2,7 @@ package test.practice.twentytwo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class MergeIntrvals {
@@ -18,7 +19,7 @@ public class MergeIntrvals {
 
         List<int[]> list = new ArrayList<>();
 
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
         int[] curr = null;
         for (int[] in : intervals) {
             if (curr == null) {
@@ -38,7 +39,7 @@ public class MergeIntrvals {
         for (int i = 0; i < list.size(); i++) {
             ans[i] = list.get(i);
         }
-
+        System.out.println(Arrays.deepToString(ans));
         return ans;
     }
 
@@ -50,6 +51,6 @@ public class MergeIntrvals {
         int[][] inpx = new int[][]{{1, 4}, {5, 6}};
         int[][] inpy = new int[][]{{1, 10}, {5, 6}};
 
-        mergeIntervals(inpx);
+        mergeIntervals(inp0);
     }
 }

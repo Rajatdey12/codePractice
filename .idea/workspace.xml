@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/se8/Test070523.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se8/ValidEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/MathOnStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/MathOnStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/EPAMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/EPAMTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se8/LambdaExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntrvals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntrvals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="1ZDQF4I44m9Kg7lUotuvkOtIS86" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,65 +57,38 @@
     "Application.Abstract_Interface_eg.executor": "Run",
     "Application.ClassLoaderTest.executor": "Run",
     "Application.CountApples.executor": "Debug",
+    "Application.DeadLock.executor": "Run",
     "Application.GroupAnagrams.executor": "Debug",
+    "Application.LambdaExampleImpl.executor": "Run",
     "Application.Leet121.executor": "Run",
     "Application.Leet122.executor": "Run",
+    "Application.Leet198.executor": "Run",
     "Application.Leet200.executor": "Run",
     "Application.Leet2615.executor": "Run",
+    "Application.Leet274.executor": "Debug",
+    "Application.Leet32.executor": "Run",
     "Application.Leet442.executor": "Debug",
+    "Application.Leet977.executor": "Debug",
+    "Application.LuckyNumber.executor": "Debug",
+    "Application.MagicNumbers.executor": "Run",
     "Application.MathOnStream.executor": "Run",
+    "Application.MergeIntrvals.executor": "Run",
+    "Application.SortedSquares.executor": "Run",
+    "Application.Test.executor": "Run",
     "Application.Test070523.executor": "Run",
+    "Application.ValidEmployeeImpl.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/rajat/OneDrive/Documents/Projects/codePractice",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Leet200">
-    <configuration name="Leet122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet122" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leet200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet200" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leet2615" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet2615" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathOnStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.MathOnStream" />
+  <component name="RunManager" selected="Application.DeadLock">
+    <configuration name="DeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se8.DeadLock" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -124,12 +100,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test070523" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.Test070523" />
+    <configuration name="Leet977" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet977" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se8.*" />
+          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LuckyNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.LuckyNumber" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagicNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.MagicNumbers" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.SortedSquares" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Leet200" />
-        <item itemvalue="Application.Leet2615" />
-        <item itemvalue="Application.MathOnStream" />
-        <item itemvalue="Application.Leet122" />
-        <item itemvalue="Application.Test070523" />
+        <item itemvalue="Application.DeadLock" />
+        <item itemvalue="Application.Leet977" />
+        <item itemvalue="Application.SortedSquares" />
+        <item itemvalue="Application.MagicNumbers" />
+        <item itemvalue="Application.LuckyNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +196,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -215,9 +236,9 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/leetCode/Leet200.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/test/leetCode/Leet32.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
