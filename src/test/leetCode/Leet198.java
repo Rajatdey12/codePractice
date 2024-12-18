@@ -21,9 +21,8 @@ Total amount you can rob = 2 + 9 + 1 = 12.*/
 
 import java.util.Arrays;
 
-// we will use memoisation top down approach
 public class Leet198 {
-
+    // we will use memoisation top down approach
     static int[] memo;
 
     public static int rob(int[] nums) {

@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/TestDateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/TestDateFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/HCLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HCLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LRUCacheOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LRUCacheOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LRUCacheTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LRUCacheTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LuckyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LuckyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MagicNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MagicNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PermutationOfCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PermutationOfCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet200.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +66,7 @@
     "Application.Leet122.executor": "Run",
     "Application.Leet198.executor": "Run",
     "Application.Leet200.executor": "Run",
+    "Application.Leet213.executor": "Run",
     "Application.Leet2615.executor": "Run",
     "Application.Leet274.executor": "Debug",
     "Application.Leet32.executor": "Run",
@@ -103,9 +95,22 @@
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Leet198">
+  <component name="RunManager" selected="Application.Leet213">
     <configuration name="Leet198" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet198" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Leet213" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet213" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -123,19 +128,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.leetCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MagicNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.MagicNumbers" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Leet213" />
         <item itemvalue="Application.Leet198" />
         <item itemvalue="Application.Leet5" />
         <item itemvalue="Application.PermutationOfCharacters" />
         <item itemvalue="Application.SwitchCaseEg" />
-        <item itemvalue="Application.MagicNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734182570883</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated practice codes 18/12/24">
+      <option name="closed" value="true" />
+      <created>1734524431938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734524431938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated practice codes" />
     <MESSAGE value="Updated practice codes Dec-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes Dec-2024" />
+    <MESSAGE value="Updated practice codes 18/12/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes 18/12/24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
