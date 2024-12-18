@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/se8/ValidEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se8/LambdaExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntrvals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntrvals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se8/TestDateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se8/TestDateFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/HCLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/HCLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LRUCacheOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LRUCacheOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LRUCacheTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LRUCacheTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LengthOfLongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LuckyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LuckyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MagicNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MagicNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PermutationOfCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PermutationOfCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet200.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -58,7 +66,10 @@
     "Application.ClassLoaderTest.executor": "Run",
     "Application.CountApples.executor": "Debug",
     "Application.DeadLock.executor": "Run",
+    "Application.ExecutorServiceTest.executor": "Run",
     "Application.GroupAnagrams.executor": "Debug",
+    "Application.HCLTest.executor": "Debug",
+    "Application.LRUCacheOne.executor": "Debug",
     "Application.LambdaExampleImpl.executor": "Run",
     "Application.Leet121.executor": "Run",
     "Application.Leet122.executor": "Run",
@@ -68,14 +79,20 @@
     "Application.Leet274.executor": "Debug",
     "Application.Leet32.executor": "Run",
     "Application.Leet442.executor": "Debug",
+    "Application.Leet5.executor": "Run",
     "Application.Leet977.executor": "Debug",
-    "Application.LuckyNumber.executor": "Debug",
-    "Application.MagicNumbers.executor": "Run",
+    "Application.LengthOfLongestSubstring.executor": "Run",
+    "Application.LuckyNumber.executor": "Run",
+    "Application.MagicNumbers.executor": "Debug",
     "Application.MathOnStream.executor": "Run",
     "Application.MergeIntrvals.executor": "Run",
+    "Application.PermutationOfCharacters.executor": "Run",
+    "Application.PrimeSum.executor": "Debug",
     "Application.SortedSquares.executor": "Run",
+    "Application.SwitchCaseEg.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.Test070523.executor": "Run",
+    "Application.TestDateFormat.executor": "Run",
     "Application.ValidEmployeeImpl.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -86,22 +103,9 @@
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DeadLock">
-    <configuration name="DeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="se8.DeadLock" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leet977" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet977" />
+  <component name="RunManager" selected="Application.Leet198">
+    <configuration name="Leet198" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet198" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LuckyNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.LuckyNumber" />
+    <configuration name="Leet5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet5" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="test.leetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +143,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortedSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.SortedSquares" />
+    <configuration name="PermutationOfCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.PermutationOfCharacters" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchCaseEg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.SwitchCaseEg" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DeadLock" />
-        <item itemvalue="Application.Leet977" />
-        <item itemvalue="Application.SortedSquares" />
+        <item itemvalue="Application.Leet198" />
+        <item itemvalue="Application.Leet5" />
+        <item itemvalue="Application.PermutationOfCharacters" />
+        <item itemvalue="Application.SwitchCaseEg" />
         <item itemvalue="Application.MagicNumbers" />
-        <item itemvalue="Application.LuckyNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1659433032265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated practice codes Dec-2024">
+      <option name="closed" value="true" />
+      <created>1734182570883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734182570883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,25 +235,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated practice codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes" />
+    <MESSAGE value="Updated practice codes Dec-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes Dec-2024" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/LRUCacheTwo.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/practice/twentytwo/GroupAnagrams.java</url>
           <line>39</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/se8/Test070523.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/practice/twentytwo/CountApples.java</url>

@@ -19,7 +19,7 @@ public class HCLTest {
             if (occurMap.get(ch) == null) {
                 occurMap.put(ch, 1);
             } else {
-                occurMap.put(ch, occurMap.get(ch)+1);
+                occurMap.put(ch, occurMap.get(ch) + 1);
             }
 
         }
@@ -35,17 +35,16 @@ public class HCLTest {
      */
     public static void arrangeCombinations(String str, String res) {
 
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             System.out.println(res + " ");
-            return;
         } else {
             for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+                char ch = str.charAt(i);
 
-            String subs = str.substring(0, i) +
-                    str.substring(i+1);
+                String subs = str.substring(0, i) +
+                        str.substring(i + 1);
 
-                    arrangeCombinations(subs, res + ch);
+                arrangeCombinations(subs, res + ch);
             }
         }
     }
@@ -55,7 +54,7 @@ public class HCLTest {
         int n = arr.length;
         int missing = ((n + 1) * (n + 2)) / 2;
 
-        for (int i =0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             missing -= arr[i];
         }
         System.out.println("missing " + missing);
@@ -80,7 +79,7 @@ public class HCLTest {
             if (intMap.get(i) == null) {
                 intMap.put(i, 1);
             } else {
-                intMap.put(i, intMap.get(i)+1);
+                intMap.put(i, intMap.get(i) + 1);
             }
         }
 
@@ -94,8 +93,8 @@ public class HCLTest {
     public static void main(String[] args) {
 //        noOfOccur("abc");
         arrangeCombinations("abc", "");
-        missingElem(new int[]{2,1,4,5,6});
+        missingElem(new int[]{2, 1, 4, 5, 6});
         duplicateCharacter("Rajat");
-        printNonRepeatNum(new int[]{1,2,2,3,3,1,4,3});
+        printNonRepeatNum(new int[]{1, 2, 2, 3, 3, 1, 4, 3});
     }
 }

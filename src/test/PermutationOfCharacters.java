@@ -7,9 +7,8 @@ public class PermutationOfCharacters {
 
     public static void permuteCombination(String inp, String res) {
 
-        if (inp.length() == 0) {
+        if (inp.isEmpty()) {
             System.out.println(res + " ");
-            return;
         } else {
             for (int i = 0; i < inp.length(); i++) {
                 char ch = inp.charAt(i);

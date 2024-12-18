@@ -18,7 +18,7 @@ Let's remove every third number (5, 11, 17, 23, ……) from the above sequence,
     public static int counter = 2;
 
     private static boolean isLuckyNumber(int n) {
-//        int counter = 2;
+
         if (counter > n) return true;
         if (n % counter == 0) return false;
         n = n - (n / counter); // new set of natural numbers.

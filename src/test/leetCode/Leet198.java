@@ -21,31 +21,60 @@ Total amount you can rob = 2 + 9 + 1 = 12.*/
 
 import java.util.Arrays;
 
+// we will use memoisation top down approach
 public class Leet198 {
 
+    static int[] memo;
 
     public static int rob(int[] nums) {
-        int n =  nums.length;
-        int idx = 1;
-        int profit = 0;
-        Arrays.sort(nums);
-        while (idx < n) {
-            if (nums[idx] > nums[idx-1]) {
-                profit += Math.max(profit, nums[idx]);
-                idx+=2;
-            } else {
-                idx++;
-            }
+        int n = nums.length;
+        memo = new int[n + 1];
+        Arrays.fill(memo, -1);
+        return rob(nums, n - 1);
+    }
+
+    private static int rob(int[] nums, int i) {
+        if (i < 0) {
+            return 0;
         }
-        System.out.println(profit);
-        return profit;
+        if (memo[i] >= 0) {
+            return memo[i];
+        }
+        int res = Math.max(rob(nums, i - 2) + nums[i], rob(nums, i - 1));
+        memo[i] = res;
+        System.out.println(res);
+        return res;
+    }
+
+
+    // DP approach
+    /*
+    we will take approach of house robbed and not robber
+    and will get the max profit out of it.
+    robbed = robDP(nums, j - 2)+ nums[j]
+    not robber = robDP(nums, j - 1)
+     */
+    public static int robDP(int[] nums) {
+        int n = nums.length;
+        return robDP(nums, n - 1);
+    }
+
+    private static int robDP(int[] nums, int j) {
+        if (j < 0) {
+            return 0;
+        }
+        int res = Math.max(robDP(nums, j - 2) + nums[j], robDP(nums, j - 1));
+        System.out.println(res);
+        return res;
     }
 
     public static void main(String[] args) {
 //        rob(new int[]{1,2,3,1});
+//        robDP(new int[]{1,2,3,1});
 //        rob(new int[]{2,7,9,3,1});
+        robDP(new int[]{2,7,9,3,1});
 //        rob(new int[]{20,100,30,150});
-        rob(new int[]{40,30,10});
+//        rob(new int[]{40, 30, 10});
 //        rob(new int[]{0,1});
     }
 }

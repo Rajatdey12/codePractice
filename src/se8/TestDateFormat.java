@@ -22,7 +22,7 @@ public class TestDateFormat {
         String a = new String("Jane");
         String b = new String("Doe");
         String c = new String("kane");
-        System.out.println(a = a = c);
+        System.out.println(a = b = c);
     }
 
 

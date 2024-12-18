@@ -47,6 +47,6 @@ we get a single digit (1) as the result. Hence, the number 325 is a magic number
 
     public static void main(String[] args) {
 //        printMagicNumber(new int[]{ 325, 326, 1234, 226, 10, 1, 2, 37, 46, 55, 73});
-        System.out.println(printMagicNumberRecursive(326));
+        System.out.println(printMagicNumberRecursive(325));
     }
 }

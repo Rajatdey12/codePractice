@@ -13,7 +13,7 @@ The Least Recently Used (LRU) cache is a cache eviction algorithm that organizes
 public class LRUCacheTwo {
 
     /*
-        Using LinkedHashSet and capacity..
+        Using LinkedHashSet and capacity.
     */
     private Set<Integer> linkedSet;
     private int cache_capacity_size;

@@ -14,9 +14,9 @@ public class LRUCacheOne {
     /*
         Using Deque (LinkedList) and hashSet to check if key/page is present.
     */
-    private Deque<Integer> doublyQueue;
-    private Set<Integer> set;
-    private int CACHE_SIZE;
+    private final Deque<Integer> doublyQueue;
+    private final Set<Integer> set;
+    private final int CACHE_SIZE;
 
 
     public LRUCacheOne(int capacity) {
@@ -50,7 +50,7 @@ public class LRUCacheOne {
     public static void main(String[] args) {
         LRUCacheOne cache = new LRUCacheOne(4);
         cache.referPage(1);
-        cache.referPage(2);
+        cache.referPage(1);
         cache.referPage(3);
         cache.referPage(2);
         cache.referPage(4);
