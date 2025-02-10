@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet198.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Parenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Parenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntrvals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/practice/twentytwo/MergeIntervalsLeet56.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +63,10 @@
     "Application.HCLTest.executor": "Debug",
     "Application.LRUCacheOne.executor": "Debug",
     "Application.LambdaExampleImpl.executor": "Run",
+    "Application.Leet1071.executor": "Run",
     "Application.Leet121.executor": "Run",
     "Application.Leet122.executor": "Run",
+    "Application.Leet1431.executor": "Run",
     "Application.Leet198.executor": "Run",
     "Application.Leet200.executor": "Run",
     "Application.Leet213.executor": "Run",
@@ -72,13 +75,18 @@
     "Application.Leet32.executor": "Run",
     "Application.Leet442.executor": "Debug",
     "Application.Leet5.executor": "Run",
+    "Application.Leet605.executor": "Debug",
     "Application.Leet977.executor": "Debug",
     "Application.LengthOfLongestSubstring.executor": "Run",
     "Application.LuckyNumber.executor": "Run",
     "Application.MagicNumbers.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.MathOnStream.executor": "Run",
+    "Application.MergeIntervalsLeet56.executor": "Debug",
     "Application.MergeIntrvals.executor": "Run",
+    "Application.Parenthesis.executor": "Debug",
     "Application.PermutationOfCharacters.executor": "Run",
+    "Application.PossibleSubsets.executor": "Run",
     "Application.PrimeSum.executor": "Debug",
     "Application.SortedSquares.executor": "Run",
     "Application.SwitchCaseEg.executor": "Run",
@@ -95,13 +103,13 @@
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Leet213">
-    <configuration name="Leet198" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet198" />
+  <component name="RunManager" selected="Application.MergeIntervalsLeet56">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Main" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Leet213" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet213" />
+    <configuration name="MergeIntervalsLeet56" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.practice.twentytwo.MergeIntervalsLeet56" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="PATTERN" value="test.practice.twentytwo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Leet5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet5" />
+    <configuration name="Parenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Parenthesis" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.leetCode.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,8 +156,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwitchCaseEg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.SwitchCaseEg" />
+    <configuration name="PossibleSubsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.PossibleSubsets" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -163,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Leet213" />
-        <item itemvalue="Application.Leet198" />
-        <item itemvalue="Application.Leet5" />
+        <item itemvalue="Application.MergeIntervalsLeet56" />
         <item itemvalue="Application.PermutationOfCharacters" />
-        <item itemvalue="Application.SwitchCaseEg" />
+        <item itemvalue="Application.PossibleSubsets" />
+        <item itemvalue="Application.Parenthesis" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734524431938</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated practice codes 18/12/24-2">
+      <option name="closed" value="true" />
+      <created>1734528150204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734528150204</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +253,8 @@
     <MESSAGE value="Updated practice codes" />
     <MESSAGE value="Updated practice codes Dec-2024" />
     <MESSAGE value="Updated practice codes 18/12/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes 18/12/24" />
+    <MESSAGE value="Updated practice codes 18/12/24-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes 18/12/24-2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

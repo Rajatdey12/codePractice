@@ -1,27 +1,36 @@
 package test;
 
+import java.util.Stack;
+
 public class Parenthesis {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String giv = "{ { } { } }  } { {} }}";
-		char[] cArray = giv.toCharArray();
-		int count =0;
-		int count1=0;
-		int balanced =0;
-		for(int i=0; i<=cArray.length-1; i++) {
-			if(cArray[i] == '{') {
-				balanced+=1;
-			}
-			if(cArray[i] == '}') {
-				count+=1;
-			}
-			count1=Math.min(count, balanced);
+	/**
+	 * solve for valid parenthesis
+	 * Problem: Given a string containing just the characters
+	 * '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+	 */
 
+	private static boolean valid(String s) {
+
+		Stack<Character> validStack = new Stack<>();
+		for (Character ch : s.toCharArray()) {
+			if (ch == '(' || ch == '{' || ch == '[') {
+				validStack.push(ch);
+			} else {
+				if (validStack.isEmpty()) return false;
+				char topElem = validStack.pop();
+				if ((ch == ')' && topElem != '(') || (ch == '}' && topElem != '{') || (ch == ']' && topElem != '[')) {
+					return false;
+				}
+			}
+		}
+		return validStack.isEmpty();
 	}
-		//System.out.println("Balanced");
-		System.out.println(count1);
-		
-	
+
+	public static void main(String[] args) {
+		System.out.println("Is the pattern provided valid ? -> " + valid("{[()]}"));
+		System.out.println("Is the pattern provided valid ? -> " + valid("{[({})]}"));
+		System.out.println("Is the pattern provided valid ? -> " + valid("{[({})}"));
+		System.out.println("Is the pattern provided valid ? -> " + valid("{[}]"));
 	}
 }

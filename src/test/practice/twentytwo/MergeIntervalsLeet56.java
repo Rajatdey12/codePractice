@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class MergeIntrvals {
+public class MergeIntervalsLeet56 {
 
     /*Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals,
      and return an array of the non-overlapping intervals that cover all the intervals in the input.
@@ -43,6 +43,30 @@ public class MergeIntrvals {
         return ans;
     }
 
+    private static int[][] mergeIntervalsGPT(int[][] intrvls) {
+
+        if (intrvls.length == 0) return new int[0][0];
+        Arrays.sort(intrvls, Comparator.comparingInt(a -> a[0]));
+
+        List<int[]> merged = new ArrayList<>();
+        int[] curr = intrvls[0];
+        merged.add(curr);
+        for (int[] intrvl : intrvls) {
+            if (intrvl[0] <= curr[1]) {
+                curr[1] = Math.max(intrvl[1], curr[1]);
+            } else {
+                curr = intrvl;
+                merged.add(curr);
+            }
+        }
+        final int[][] ans = new int[merged.size()][];
+        for (int i = 0; i < merged.size(); i++) {
+            ans[i] = merged.get(i);
+        }
+        System.out.println(Arrays.deepToString(ans));
+        return ans;
+    }
+
     public static void main(String[] args) {
 
         int[][] inp0 = new int[][]{{1,3},{2,6},{8,10},{15,18}};
@@ -51,6 +75,8 @@ public class MergeIntrvals {
         int[][] inpx = new int[][]{{1, 4}, {5, 6}};
         int[][] inpy = new int[][]{{1, 10}, {5, 6}};
 
-        mergeIntervals(inp0);
+//        mergeIntervals(inp0);
+        mergeIntervalsGPT(inp0);
     }
+
 }
