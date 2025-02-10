@@ -65,8 +65,19 @@ public class VizaTest {
             }
             i++;
         }
-        System.out.println(max_so_far);
+        System.out.println("Max sum/kadane's algo max sum in contiguius sub arr :: " + max_so_far);
         return max_so_far;
+    }
+
+    private static int contiguousSubArrGPT(int[] arr) {
+        int maxSum = arr[0];
+        int currSum = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            currSum = Math.max(arr[i], currSum + arr[i]);
+            maxSum = Math.max(currSum, maxSum);
+        }
+        System.out.println("Max sum/kadane's algo max sum in contiguius sub arr :: " + maxSum);
+        return maxSum;
     }
 
 
@@ -111,9 +122,10 @@ public class VizaTest {
 
         int contigousArr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
         contiguousSubArr(contigousArr);
+        contiguousSubArrGPT(contigousArr);
 
-//        int[][] setArr = new int[][] {{1,3},{2,6},{8,10},{15,18}};
-        int[][] setArr = new int[][] {{1,4},{4,5}};
+        int[][] setArr = new int[][] {{1,3},{2,6},{8,10},{15,18}};
+//        int[][] setArr = new int[][] {{1,4},{4,5}};
         mergeIntervals(setArr);
     }
 }
