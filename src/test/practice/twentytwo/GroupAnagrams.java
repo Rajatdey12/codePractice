@@ -15,11 +15,7 @@ public class GroupAnagrams {
         Arrays.sort(chrArr1);
         Arrays.sort(chrArr2);
 
-        if (Arrays.equals(chrArr1, chrArr2)) {
-            return true;
-        } else {
-            return false;
-        }
+        return Arrays.equals(chrArr1, chrArr2);
 
     }
 
