@@ -19,7 +19,9 @@ public class Parenthesis {
 			} else {
 				if (validStack.isEmpty()) return false;
 				char topElem = validStack.pop();
-				if ((ch == ')' && topElem != '(') || (ch == '}' && topElem != '{') || (ch == ']' && topElem != '[')) {
+				if ((ch == ')' && topElem != '(')
+						|| (ch == '}' && topElem != '{')
+						|| (ch == ']' && topElem != '[')) {
 					return false;
 				}
 			}

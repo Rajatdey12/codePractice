@@ -23,6 +23,7 @@ we get a single digit (1) as the result. Hence, the number 325 is a magic number
             if (n == 1) {
                 System.out.println("The number : " + j + " is a magic number");
             } else {
+                System.out.println("The single digit magic num : " + n);
                 System.out.println(j + " : is Not a magic number");
             }
         }
@@ -41,12 +42,17 @@ we get a single digit (1) as the result. Hence, the number 325 is a magic number
             n = n / 10;
         }
         n = res;
-        if (n < 9 && n != 1) return false;
+        if (n < 9 && n != 1) {
+            System.out.println("The single digit magic num : " + n);
+            return false;
+        }
         return printMagicNumberRecursive(n);
     }
 
     public static void main(String[] args) {
 //        printMagicNumber(new int[]{ 325, 326, 1234, 226, 10, 1, 2, 37, 46, 55, 73});
         System.out.println(printMagicNumberRecursive(325));
+        System.out.println(printMagicNumberRecursive(38));
+        System.out.println(printMagicNumberRecursive(1337));
     }
 }
