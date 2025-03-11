@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/basics/pack1/IBMTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MagicNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MagicNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Parenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Parenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/basics/pack1/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,7 @@
   "keyToString": {
     "Application.Abstract_Interface_eg.executor": "Run",
     "Application.ClassLoaderTest.executor": "Run",
+    "Application.CombinationSum.executor": "Run",
     "Application.CountApples.executor": "Debug",
     "Application.DeadLock.executor": "Run",
     "Application.ExecutorServiceTest.executor": "Run",
@@ -63,6 +64,7 @@
     "Application.GoldenRretriever.executor": "Run",
     "Application.GroupAnagrams.executor": "Debug",
     "Application.HCLTest.executor": "Debug",
+    "Application.IBMTest.executor": "Run",
     "Application.LRUCacheOne.executor": "Debug",
     "Application.LambdaExampleImpl.executor": "Run",
     "Application.Leet1071.executor": "Run",
@@ -93,7 +95,7 @@
     "Application.PrimeSum.executor": "Debug",
     "Application.SortedSquares.executor": "Run",
     "Application.SwitchCaseEg.executor": "Run",
-    "Application.Test.executor": "Debug",
+    "Application.Test.executor": "Run",
     "Application.Test070523.executor": "Run",
     "Application.TestDateFormat.executor": "Run",
     "Application.ValidEmployeeImpl.executor": "Run",
@@ -108,7 +110,25 @@
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.WalmartTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rajat\OneDrive\Documents\Projects\codePractice\src\test\basics\pack1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.IBMTest">
+    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.basics.pack1.CombinationSum" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.basics.pack1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FindAllAnagramsMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.FindAllAnagramsMap" />
       <module name="test" />
@@ -122,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Leet32" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.leetCode.Leet32" />
+    <configuration name="IBMTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.basics.pack1.IBMTest" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.leetCode.pack1.*" />
+          <option name="PATTERN" value="test.basics.pack1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,28 +155,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MagicNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.MagicNumbers" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WFTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.WFTest" />
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IBMTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CombinationSum" />
         <item itemvalue="Application.WalmartTest" />
         <item itemvalue="Application.FindAllAnagramsMap" />
-        <item itemvalue="Application.MagicNumbers" />
-        <item itemvalue="Application.Leet32" />
-        <item itemvalue="Application.WFTest" />
       </list>
     </recent_temporary>
   </component>
