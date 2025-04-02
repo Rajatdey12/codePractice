@@ -13,7 +13,7 @@ ssh-keygen -t rsa
 command to update permission for SSH keys -
 chmod 600 ~/.ssh/id_rsa
 
-commnd to upload the public key and attach it to the user -
+command to upload the public key and attach it to the user -
 aws iam upload-ssh-public-key \
 --user-name gitUser \
 --ssh-public-key-body file://~/.ssh/id_rsa.pub

@@ -15,7 +15,7 @@ ECR - elastic container repository to push images
 POD CREATION :
 
 -crete a namespace
-kubect create namespace project1
+kubectl create namespace project1
 
 
 -create a pod by linking that to the ns
@@ -45,7 +45,7 @@ eksctl create cluster
 HELM - package manager for kubernetes
 weave/flux - gitOps tool - reads the changes from git/version control, checks desired state matches the current state.
 
-LAB 1: - BUILDING AN AMAZN EKS ENVIRONMENT
+LAB 1: - BUILDING AN AMAZON EKS ENVIRONMENT
 --------------------------------------------
 
 download kubectl utility -

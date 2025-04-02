@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d23b9a81-35ec-4d58-bbc3-9eda617c39fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/basics/pack1/IBMTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/leetCode/Leet121.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/leetCode/Leet121.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docx/kubernetes-AWS-training.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docx/kubernetes-AWS-training.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docx/kubernetes-AWS-training2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docx/kubernetes-AWS-training2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,70 +52,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Abstract_Interface_eg.executor": "Run",
-    "Application.ClassLoaderTest.executor": "Run",
-    "Application.CombinationSum.executor": "Run",
-    "Application.CountApples.executor": "Debug",
-    "Application.DeadLock.executor": "Run",
-    "Application.Employee.executor": "Run",
-    "Application.ExecutorServiceTest.executor": "Run",
-    "Application.FindAllAnagramsMap.executor": "Run",
-    "Application.GoldenRretriever.executor": "Run",
-    "Application.GroupAnagrams.executor": "Debug",
-    "Application.HCLTest.executor": "Debug",
-    "Application.IBMTest.executor": "Run",
-    "Application.LRUCacheOne.executor": "Debug",
-    "Application.LambdaExampleImpl.executor": "Run",
-    "Application.Leet1071.executor": "Run",
-    "Application.Leet121.executor": "Run",
-    "Application.Leet122.executor": "Run",
-    "Application.Leet1431.executor": "Run",
-    "Application.Leet169.executor": "Run",
-    "Application.Leet198.executor": "Run",
-    "Application.Leet200.executor": "Run",
-    "Application.Leet213.executor": "Run",
-    "Application.Leet2615.executor": "Run",
-    "Application.Leet274.executor": "Debug",
-    "Application.Leet32.executor": "Run",
-    "Application.Leet442.executor": "Debug",
-    "Application.Leet5.executor": "Run",
-    "Application.Leet605.executor": "Debug",
-    "Application.Leet977.executor": "Debug",
-    "Application.LengthOfLongestSubstring.executor": "Run",
-    "Application.LuckyNumber.executor": "Run",
-    "Application.MSTest.executor": "Run",
-    "Application.MagicNumbers.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MathOnStream.executor": "Run",
-    "Application.MergeIntervalsLeet56.executor": "Debug",
-    "Application.MergeIntrvals.executor": "Run",
-    "Application.Parenthesis.executor": "Debug",
-    "Application.PermutationOfCharacters.executor": "Run",
-    "Application.PossibleSubsets.executor": "Run",
-    "Application.PrimeSum.executor": "Debug",
-    "Application.PrintNumsAlternative.executor": "Run",
-    "Application.SortedSquares.executor": "Run",
-    "Application.SwitchCaseEg.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.Test070523.executor": "Run",
-    "Application.TestDateFormat.executor": "Run",
-    "Application.ValidEmployeeImpl.executor": "Run",
-    "Application.VizaTest.executor": "Run",
-    "Application.WFTest.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rajat/OneDrive/Documents/Projects/wf-test/a12db951-3ce7-4908-853b-3b1e3ff54998",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Abstract_Interface_eg.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClassLoaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CombinationSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountApples.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DeadLock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Employee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExecutorServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FindAllAnagramsMap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GoldenRretriever.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GroupAnagrams.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.HCLTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.IBMTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LRUCacheOne.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LambdaExampleImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet1071.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet121.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet122.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet1431.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet169.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet198.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet200.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet213.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet2615.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet274.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Leet32.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet442.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Leet5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Leet605.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Leet977.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LengthOfLongestSubstring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LuckyNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MSTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MagicNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathOnStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeIntervalsLeet56.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MergeIntrvals.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Parenthesis.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.PermutationOfCharacters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PossibleSubsets.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrimeSum.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.PrintNumsAlternative.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortedSquares.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SwitchCaseEg.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test070523.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestDateFormat.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ValidEmployeeImpl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VizaTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WFTest.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rajat/OneDrive/Documents/Projects/wf-test/a12db951-3ce7-4908-853b-3b1e3ff54998&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rajat\OneDrive\Documents\Projects\codePractice\src\test\basics\pack1" />
@@ -273,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741696857698</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated practice codes 02/04/25 - practice-1">
+      <option name="closed" value="true" />
+      <created>1743608523804</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743608523804</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +310,8 @@
     <MESSAGE value="Updated practice codes 11/02/25 - practice-2" />
     <MESSAGE value="Updated practice codes 16/02/25 - practice-1" />
     <MESSAGE value="Updated practice codes 11/03/25 - practice-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes 11/03/25 - practice-2" />
+    <MESSAGE value="Updated practice codes 02/04/25 - practice-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated practice codes 02/04/25 - practice-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
