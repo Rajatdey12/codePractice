@@ -1,5 +1,7 @@
 package test.basics.pack1;
 
+import java.io.IOException;
+
 public class SubclassSamePackage extends Parent {
 
     private void methodPrivate() {
@@ -16,5 +18,10 @@ public class SubclassSamePackage extends Parent {
 
     public static void staticMtd() {
         System.out.println("static Method() of Subclass called...");
+    }
+
+    @Override
+    public void testExceptionMtd() throws IOException {  // checked exception needs to be thrown at parent, if not then compilation error
+        super.testExceptionMtd();
     }
 }

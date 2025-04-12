@@ -27,4 +27,8 @@ public class Parent {
     void defaultMtd() {
         System.out.println("static Method() of Parent called...");
     }
+
+    public void testExceptionMtd() throws IOException {
+
+    }
 }
